@@ -12,9 +12,9 @@ namespace CRUDExample
 {
     public class ADLCRUD
     {
-        private const string ACCOUNTNAME                                = "danimaldatalake";
-        private const string ACCOUNTKEY                                 = "NsIGmJIv5e4p63X40Xf58raDcw5AN1e5ld6xzlATtWLsh+BiAvMkbw5LyLtOBxU/k+Dhtb+1adG6/nHEzC/lwA==";
-        private const string CONTAINER                                  = "main";
+        private const string ACCOUNTNAME                                = "ACC NAME";
+        private const string ACCOUNTKEY                                 = "KEY";
+        private const string CONTAINER                                  = "main"; //Container name
         private const string DFURL                                      = "https://" + ACCOUNTNAME + ".dfs.core.windows.net";
 
         public static void UploadFile(string FileName, string LocalFileName)
