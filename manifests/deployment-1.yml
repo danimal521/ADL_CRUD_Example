@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "pge2ehttp5-bc85"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "pge2ehttp5-bc85"
+  template:
+    metadata:
+      labels:
+        app: "pge2ehttp5-bc85"
+    spec:
+      containers:
+        - name: "pge2ehttp5-bc85"
+          image: "danimalcontainers.azurecr.io/pge2ehttp5"
+          ports:
+          - containerPort: 5
